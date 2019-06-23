@@ -1,3 +1,6 @@
+use std::env;
+
 fn main() {
-    println!("Hello, Word Count!");
+    let args: Vec<String> = env::args().collect();
+    println!("{:?}", args);
 }
